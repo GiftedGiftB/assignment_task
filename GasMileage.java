@@ -1,5 +1,6 @@
-// prompt the user to enter miles driven as first number and gallon used as second number
-//
+// prompt the user to enter number of miles driven
+// prompt the user to enter number of gallon used as second number
+// divide number of miles driven by number of gallon used
 
 import java.util.Scanner;
 public class GasMileage{
@@ -10,12 +11,10 @@ public class GasMileage{
 	int counter = 0;
 	int gallonGallon = 0;
 	int total = 0;
-	int num;
-
-	//System.out.print("Enter the number of mile driven: ");
-	//mileDriven = scan.nextInt();
+	int exitNumber;
 
 	do {
+
 	System.out.print("Enter the number of mile driven: ");
 	mileDriven = scan.nextInt();
 
@@ -26,11 +25,11 @@ public class GasMileage{
 	System.out.println("Number of gallon used for each trip is: " + dividedNumber);
 
 	System.out.println("Enter any number to continue or -1 to exit: ");
-	num= scan.nextInt();
+	exitNumber = scan.nextInt();
 
 	total += dividedNumber;
 	}
-	while (num != -1); 
+	while (exitNumber != -1); 
 	
 	System.out.print("Total gallon used: " + total);
 	
